@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BreakOut Game</title>
+  </head>
+  <body>
+    <h1>Breakout Game</h1>
+    <button class="btn btn-rules" id="btn-rules">Show Rules</button>
+    <div class="rules" id="rules">
+      <h3>Have A Look on Rules..</h3>
+      <p>
+        -- Use the Left and Right Arrow Keys to move the Paddle.
+      </p>
+      <p>
+        -- Try to smash as many bricks as you can...!! go ahead.
+      </p>
+      <p>
+        -- Lose.. if you miss the ball to connect on the paddle...
+      </p>
+      <button class="btn btn-close" id="btn-close">Close</button>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <div class="popup-container" id="popup-container">
+      <div class="popup" id="popup">
+        <h3>Unfortunately You Lose...!!</h3>
+        <h4>Your Score : <span id="popup-score">0</span></h4>
+        <p>Refresh To Play Again</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
